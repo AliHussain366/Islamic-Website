@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Hussain </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Ali Hussain's  Islamic Journey</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#quran">Quran</a></li>
+                <li><a href="#hadees">Hadees</a></li>
+                <li><a href="#namaz-timings">Namaz Timings</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#donate">Donation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="night-mode-toggle">Toggle Night Mode</button>
+
+    <!-- Main Banner Section -->
+    <section class="main-banner">
+        <h2>"In the name of Allah, the Most Gracious, the Most Merciful."</h2>
+        <p>Welcome to your spiritual guide</p>
+    </section>
+
+    <!-- Quran Section -->
+    <section id="quran">
+        <h2>The Holy Quran</h2>
+        <p>Read the Quran in Arabic with translation in English, Urdu, and other languages.</p>
+        <div class="quran-widget">
+            <!-- Embed Quran Widget or API here -->
+        </div>
+        <button>Play Quran Recitation</button>
+    </section>
+
+    <!-- Prayer Timings Section -->
+    <section id="namaz-timings">
+        <h2>Prayer Timings</h2>
+        <p>Prayer timings for your location:</p>
+        <ul>
+            <li>Fajr: <span id="fajr-time"></span></li>
+            <li>Dhuhr: <span id="dhuhr-time"></span></li>
+            <li>Asr: <span id="asr-time"></span></li>
+            <li>Maghrib: <span id="maghrib-time"></span></li>
+            <li>Isha: <span id="isha-time"></span></li>
+        </ul>
+    </section>
+
+    <!-- Qibla Section -->
+    <section id="qibla">
+        <h2>Qibla Direction</h2>
+        <p>Find the Qibla direction from your location:</p>
+        <p id="qibla-direction"></p>
+    </section>
+
+    <!-- Halal Food Directory Section -->
+    <section id="halal-food">
+        <h2>Halal Food Directory</h2>
+        <p>Find Halal food options near you:</p>
+        <ul>
+            <li><strong>Restaurant Name</strong>: Cuisine, Location</li>
+            <li><strong>Restaurant Name</strong>: Cuisine, Location</li>
+            <li><strong>Restaurant Name</strong>: Cuisine, Location</li>
+        </ul>
+    </section>
+
+    <!-- Daily Dua Section -->
+    <section id="dua">
+        <h2>Daily Dua</h2>
+        <p id="dua-text">"اللهم إني أسالك علمًا نافعًا ورزقًا طيبًا وعملاً متقبلًا."</p>
+        <p><strong>Translation:</strong> "O Allah, I ask You for beneficial knowledge, good provision, and accepted deeds."</p>
+    </section>
+
+    <!-- Islamic Events Section -->
+    <section id="islamic-events">
+        <h2>Upcoming Islamic Events</h2>
+        <ul>
+            <li>Ramadan Begins: March 11, 2024</li>
+            <li>Eid al-Fitr: April 9, 2024</li>
+            <li>Eid al-Adha: June 28, 2024</li>
+            <li>Hajj: July 6, 2024</li>
+        </ul>
+    </section>
+
+    <!-- Hijri Date Section -->
+    <section id="hijri-date">
+        <h2>Today's Hijri Date</h2>
+        <p id="hijri-date-text"></p>
+    </section>
+
+    <!-- Islamic Quiz Section -->
+    <section id="quiz">
+        <h2>Islamic Quiz</h2>
+        <p>Test your knowledge about Islam!</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <div id="quiz-container"></div>
+    </section>
+
+    <!-- Islamic Reminders Section -->
+    <section id="reminders">
+        <h2>Islamic Reminders</h2>
+        <p>Stay consistent with your worship:</p>
+        <ul>
+            <li>Reminder: Pray Fajr</li>
+            <li>Reminder: Perform Dhikr after Fajr</li>
+            <li>Reminder: Read Quran for 15 minutes</li>
+        </ul>
+    </section>
+
+    <!-- Islamic Videos Section -->
+    <section id="islamic-videos">
+        <h2>Islamic Lectures & Videos</h2>
+        <div class="video">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oNEjZbajYnQ?si=o-Fpg6hlAQrr3TCW&amp;start=42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gJuveXDhKDs?si=m4eZ7Fi7XtQ4aBmC&amp;start=42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Lecture on Importance of Knowledge in Islam</p>
+        </div>
+    </section>
+
+    <!-- Islamic Quotes Section -->
+    <section id="islamic-quotes">
+        <h2>Islamic Quote of the Day</h2>
+        <blockquote>
+            <p>"Indeed, Allah is with those who fear Him and those who are doers of good." — [Quran 16:128]</p>
+        </blockquote>
+    </section>
+
+    <!-- Islamic Books Section -->
+    <section id="islamic-books">
+        <h2>Islamic Books</h2>
+        <ul>
+            <li><a href="Quran Karim (Urdu Tarjma & Tafseer).pdf" target="_blank">Book 1: Quran e kareem </a></li>
+            <li><a href="sahi-bukhari-urdu-jild1.pdf" target="_blank">Book 2: The Seerah of Prophet Muhammad (PBUH)</a></li>
+            
+        </ul>
+    </section>
+
+    <!-- Quranic Verse Section -->
+    <section id="quran-verse">
+        <h2>Quranic Verse of the Day</h2>
+        <p id="quran-verse">"بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ" (In the name of Allah, the Most Gracious, the Most Merciful)</p>
+        <button onclick="viewTafseer()">View Tafseer</button>
+        <div id="tafsseer" style="display: none;">
+            <p><strong>Tafseer:</strong> This verse is the opening verse of the Quran and is recited in every chapter...</p>
+        </div>
+    </section>
+
+    <!-- Islamic Audio Library Section -->
+    <section id="audio-library">
+        <h2>Islamic Audio Library</h2>
+        <p>Listen to Quranic recitations and Islamic Nasheeds:</p>
+        
+        <h3>Quran Recitation</h3>
+        <audio controls>
+            <source src="mishary-rashid-alafasy-067-muslimcentral.com.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <h3>Nasheed</h3>
+        <audio controls>
+            <source src="abdul-rahman-al-sudais-001-qurancentral.com-192.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Islamic Wallpapers Section -->
+    <section id="wallpapers">
+        <h2>Islamic Wallpapers</h2>
+        <p>Download beautiful Islamic wallpapers for your desktop and mobile:</p>
+        
+        <div class="wallpaper">
+            <img src="hagia-sophia-domes-8rl7ydd9akevuf3q (1).jpg" alt="Islamic Wallpaper 1" />
+            <a href="hagia-sophia-domes-8rl7ydd9akevuf3q (1).jpg" download>Download</a>
+        </div>
+        <div class="wallpaper">
+            <img src="460136565_532104342843863_5611827702621141717_n.jpg" alt="Islamic Wallpaper 2" />
+            <a href="460136565_532104342843863_5611827702621141717_n.jpg" download>Download</a>
+        </div>
+ 
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Islamic Website | <a href="#">Privacy Policy</a></p>
+        <p>Follow us on: 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>, 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+</body>
+</html>

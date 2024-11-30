@@ -1,0 +1,1328 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #2a7a3f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Banner Styling */
+.main-banner {
+    background-color: #6c9e72;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-banner h2 {
+    font-size: 36px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #2a7a3f;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2a7a3f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+body.night-mode {
+    background-color: #333;
+    color: white;
+}
+
+header.night-mode {
+    background-color: #1a5a32;
+}
+
+footer.night-mode {
+    background-color: #1a5a32;
+}
+.progress-bar {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    margin: 10px 0;
+}
+/* Basic styles for the whole website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header .logo h1 {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Main Banner Section */
+.main-banner {
+    background-color: #cce7ff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.main-banner h2 {
+    font-size: 2em;
+}
+
+/* Quran and Prayer Timings Section */
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    header .logo h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        text-align: left;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-banner h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+/* Night Mode */
+body.night-mode {
+    background-color: #2c3e50;
+    color: white;
+}
+
+body.night-mode header {
+    background-color: #555;
+}
+
+body.night-mode section {
+    background-color: #34495e;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* 3D Rotation Effect */
+.container {
+    perspective: 1500px; /* Perspective to enable 3D effects */
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    border-radius: 10px;
+    transform-style: preserve-3d; /* Keeps child elements in 3D space */
+    animation: rotate3d 5s infinite alternate; /* Applying the rotation animation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Keyframes for 3D rotation */
+@keyframes rotate3d {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); /* Initial state */
+    }
+    25% {
+        transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg); /* Rotate on X axis */
+    }
+    50% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg); /* Rotate on Y axis */
+    }
+    75% {
+        transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg); /* Rotate on Y axis */
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg); /* Full rotation */
+    }
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Night Mode */
+body.night-mode {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+/* Global Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(100%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes rotate3d {
+    0% { transform: rotate3d(1, 1, 0, 0deg); }
+    100% { transform: rotate3d(1, 1, 0, 360deg); }
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+header nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Main Banner */
+.main-banner {
+    position: relative;
+    background: url('banner-image.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+    background-attachment: fixed;
+}
+
+.main-banner h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideIn 2s ease-out;
+}
+
+.main-banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: slideIn 2s ease-out;
+}
+
+button {
+    background-color: #f39c12;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    margin: 40px 0;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.quran-widget, .quote {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Hover Effects for Interactive Elements */
+.quran-widget:hover, .quote:hover {
+    transform: scale(1.05);
+    animation: pulse 1s infinite;
+}
+
+.quran-widget button, .quote button {
+    background-color: #2ecc71;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.quran-widget button:hover, .quote button:hover {
+    background-color: #27ae60;
+}
+
+/* Islamic Quiz */
+#quiz-container button {
+    background-color: #9b59b6;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#quiz-container button:hover {
+    background-color: #8e44ad;
+    transform: scale(1.1);
+}
+
+/* Islamic Audio Library */
+audio {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+/* Parallax Effect */
+.parallax {
+    background-image: url('parallax-background.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Islamic Wallpapers */
+#wallpapers .wallpaper {
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#wallpapers .wallpaper img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#wallpapers .wallpaper:hover img {
+    transform: scale(1.1);
+}
+
+#wallpapers .wallpaper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #f39c12;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .main-banner h2 {
+        font-size: 2.5rem;
+    }
+
+    .main-banner p {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    #wallpapers .wallpaper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    audio {
+        max-width: 100%;
+    }
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Night Mode Styles */
+body.night-mode {
+    background-color: #2c2c2c;
+    color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-size: 1.1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #3498db;
+}
+
+/* Main Banner */
+.main-banner {
+    background: url('banner-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.main-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.main-banner p {
+    font-size: 1.2rem;
+}
+
+/* Button Styles */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+/* Quran Widget */
+.quran-widget {
+    background-color: #e7f0f9;
+    border: 1px solid #3498db;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.quran-widget button {
+    background-color: #2ecc71;
+}
+
+.quran-widget button:hover {
+    background-color: #27ae60;
+}
+
+/* Prayer Timings */
+#namaz-timings ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding-left: 0;
+}
+
+#namaz-timings ul li {
+    margin-bottom: 10px;
+}
+
+#namaz-timings ul li span {
+    font-weight: bold;
+}
+
+/* Islamic Quotes */
+#islamic-quotes blockquote {
+    font-style: italic;
+    background-color: #f9f9f9;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+#islamic-quotes p {
+    font-size: 1.2rem;
+}
+
+/* Islamic Quiz */
+#quiz-container {
+    margin-top: 20px;
+}
+
+button#start-quiz {
+    font-size: 1.2rem;
+    background-color: #f39c12;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button#start-quiz:hover {
+    background-color: #e67e22;
+}
+
+/* Islamic Audio Library */
+audio {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Islamic Wallpapers */
+#wallpapers .wallpaper {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+#wallpapers .wallpaper img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#wallpapers .wallpaper img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #3498db;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-banner h2 {
+        font-size: 2rem;
+    }
+
+    .main-banner p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    #wallpapers .wallpaper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    audio {
+        max-width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Base Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Dark Mode */
+body.night-mode {
+    background-color: #2c2c2c;
+    color: #f4f4f4;
+}
+
+body.night-mode header {
+    background-color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Main Banner */
+.main-banner {
+    position: relative;
+    background: url('banner-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    background-attachment: fixed;
+}
+
+.main-banner h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideIn 2s ease-out;
+}
+
+button {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.quran-widget,
+.quote {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.quran-widget:hover,
+.quote:hover {
+    transform: scale(1.05);
+    animation: pulse 1s infinite;
+}
+
+.quran-widget button,
+.quote button {
+    background-color: #2ecc71;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.quran-widget button:hover,
+.quote button:hover {
+    background-color: #27ae60;
+}
+
+/* Neumorphism for Cards */
+.neumorphism {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.neumorphism:hover {
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2), -15px -15px 25px rgba(255, 255, 255, 0.9);
+}
+
+/* 3D Rotating Box */
+.container {
+    perspective: 1500px;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    animation: rotate3d 5s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Keyframe Animation */
+@keyframes rotate3d {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25% {
+        transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg);
+    }
+    75% {
+        transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-banner h2 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    #wallpapers .wallpaper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    audio {
+        max-width: 100%;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f8;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #fff;
+    color: #3498db;
+    transform: translateY(-5px);
+}
+
+/* Main Banner */
+.main-banner {
+    background: url('460136565_532104342843863_5611827702621141717_n.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2bb0ca;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.main-banner h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideIn 1.5s ease-out;
+}
+
+.main-banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: slideIn 2s ease-out;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #8e44ad;
+    transform: translateY(-5px);
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 40px 0;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s ease-out forwards;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #7f8c8d;
+}
+
+/* Quotes */
+blockquote {
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 20px;
+    color: #34495e;
+    transform: translateY(10px);
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+/* Buttons for Interactive Sections */
+.quran-widget button, .quote button {
+    background-color: #2ecc71;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.quran-widget button:hover, .quote button:hover {
+    background-color: #27ae60;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 1rem;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+footer a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+/* Night Mode */
+body.night-mode {
+    background-color: #2c2c2c;
+    color: #ecf0f1;
+}
+
+body.night-mode header {
+    background: linear-gradient(135deg, #555, #777);
+}
+
+body.night-mode footer {
+    background-color: #222;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-banner h2 {
+        font-size: 2.5rem;
+    }
+
+    .main-banner p {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    button {
+        padding: 12px 30px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
